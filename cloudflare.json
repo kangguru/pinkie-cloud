@@ -1,0 +1,44 @@
+{
+
+    "name": "Pinkiefy",
+    "description": "lets an army of Pinkies march over your site",
+    "version": "0.1",
+    "category": "game",
+    "main": "public/javascripts/app_module.js",
+    "config":{
+        "details":{
+            "Language": "English",
+            "Price": "Free",
+            "Restrictions": "None",
+            "TOS":"http://www.cloudflare.com/terms",
+            "has_js": true
+        },
+        "assets":{
+            "logos" : {
+                "200px": "./public/images/pinkie-200.png",
+                "132px": "./public/images/pinkie-132.png"
+            },
+            "detail_page" : [
+                "./public/images/pinkie.png"
+            ]
+        },
+        "interface": [
+            {
+                "type": "select",
+                "id": "direction",
+                "name": "Marching direction?",
+                "description": "From left to right or right to left?",
+                "options": [
+                    {
+                        "label": "Left!",
+                        "value": "left"
+                    },
+                    {
+                        "label": "Right!",
+                        "value": "right"
+                    }
+                ]
+            }
+        ]
+    }
+}
